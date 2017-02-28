@@ -58,7 +58,7 @@ function setup() {
 	    }
 	    
 	    var element;
-	    if(childIndex == 0) {
+x	    if(childIndex == 0) {
 		switch(parentIndex) {
 		case 0:
 		    element = document.getElementById("output-over-over");
