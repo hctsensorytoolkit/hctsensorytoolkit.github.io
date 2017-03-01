@@ -47,50 +47,64 @@ function setup() {
 		break;
 	    }
 	    
+	    
 	    update();
 	};
 
 	function update() {
 	    var allOutputs = document.getElementsByClassName("output");
-
+	    
 	    for(i = 0; i < allOutputs.length; i++) {
 		allOutputs[i].style.display = "none";
 	    }
+
+	    document.getElementById("resources-buttons").style.display = "none";
 	    
-	    var element;
+	    var elements;
+	    
 	    if(childIndex == 0) {
 		switch(parentIndex) {
 		case 0:
-		    element = document.getElementById("output-over-over");
+		    elements = document.getElementsByClassName("output-over-over");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		case 1:
-		    element = document.getElementById("output-under-over");
+		    elements = document.getElementsByClassName("output-under-over");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		case 2:
-		    element = document.getElementById("output-neutral-over");
+		    elements = document.getElementsByClassName("output-neutral-over");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		default:
-		    element = document.getElementById("output-unselected");
+		
+		    elements = document.getElementsByClassName("output-unselected");
 		}
 	    } else if(childIndex == 1) {
 		switch(parentIndex) {
 		case 0:
-		    element = document.getElementById("output-over-under");
+		    elements = document.getElementsByClassName("output-over-under");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		case 1:
-		    element = document.getElementById("output-under-under");
+		    elements = document.getElementsByClassName("output-under-under");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		case 2:
-		    element = document.getElementById("output-neutral-under");
+		    elements = document.getElementsByClassName("output-neutral-under");
+		    document.getElementById("resources-buttons").style.display = "inline";
 		    break;
 		default:
-		    element = document.getElementById("output-unselected");
+		
+		    elements = document.getElementsByClassName("output-unselected");
 		}
-	    } else {
-		element = document.getElementById("output-unselected");
+	    } else {	
+		elements = document.getElementsByClassName("output-unselected");
 	    }
 
-	    element.style.display = "inline";
+	    for(i = 0; i < elements.length; i++) {
+		elements[i].style.display = "inline";
+	    }
 	    
 	}
 
@@ -105,7 +119,6 @@ function setup() {
     for(i = 0; i < inputsChild.length; i++) {
 	inputsChild[i].addEventListener("click", outputModule.updateChild);
     }
-    
     
 }
 

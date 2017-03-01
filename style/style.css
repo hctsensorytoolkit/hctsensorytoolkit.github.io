@@ -3,6 +3,6 @@
     display: none;
 }
 
-#output-unselected {
+.output-unselected {
     display: inline
 }
