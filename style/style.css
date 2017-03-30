@@ -6,6 +6,7 @@ body {
     color: #5C5050;
     font-family: "Montserrat", "Lato", "Arial", "sans-serif";
     background-color:#ECEEEB;
+    font-size: 1vw;
     
 }
 
@@ -21,16 +22,16 @@ body {
     background-size:100%;
     color:white;
     text-shadow:2px 2px black;
-    padding-bottom: 20rem;
+    padding-bottom: 10%;
     text-align: right;
 }
 
 #index-banner-area h1 {
-    font-size: 800%;
+    font-size: 8vw;
 }
 
 #index-banner-area p {
-    font-size: 250%;
+    font-size: 2.5vw;
 }
 
 
