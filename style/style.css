@@ -3,11 +3,36 @@
 @import url(http://fonts.googleapis.com/css?family=Arial:400,700);
 
 body {
-    background-color:#ECEEEB;
     color: #5C5050;
     font-family: "Montserrat", "Lato", "Arial", "sans-serif";
+    background-color:#ECEEEB;
     
 }
+
+
+.navbar-default {
+    margin-bottom:0px;
+}
+
+#index-banner-area {
+    background-image: url("../res/chalkbaby.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:white;
+    text-shadow:2px 2px black;
+    padding-bottom: 20rem;
+    text-align: right;
+}
+
+#index-banner-area h1 {
+    font-size: 10rem;
+}
+
+#index-banner-area p {
+    font-size: 3rem;
+}
+
 
 .btn-primary {
     background-color: #8D928B;
@@ -19,10 +44,16 @@ body {
     background-color: #5C5050;
 }
 
+.jumbotron {
+    background-color: white;
+}
+
 .input-parent,.input-child {
     padding: 1rem;
     border-style: solid;
-    border-color:teal;
+    border-radius: 1rem;
+    border-color:#5C5050;
+    background-color: white;
 }
 
 .input-row {
@@ -33,9 +64,6 @@ body {
     margin-top: 2rem;
 }
 
-.page-header h1 {
-    font-size: 5rem;
-}
 
 .output {
     display: none;
