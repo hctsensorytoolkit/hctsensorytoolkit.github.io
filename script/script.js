@@ -58,7 +58,7 @@ function setup() {
 		allOutputs[i].style.display = "none";
 	    }
 
-	    document.getElementById("resources-buttons").style.display = "none";
+	    document.getElementById("more-output-button").style.display = "none";
 	    
 	    var elements;
 	    
@@ -66,37 +66,58 @@ function setup() {
 		switch(parentIndex) {
 		case 0:
 		    elements = document.getElementsByClassName("output-over-over");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
+		    
 		    break;
 		case 1:
 		    elements = document.getElementsByClassName("output-under-over");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
 		    break;
 		case 2:
 		    elements = document.getElementsByClassName("output-neutral-over");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
 		    break;
-		default:
 		
-		    elements = document.getElementsByClassName("output-unselected");
 		}
 	    } else if(childIndex == 1) {
 		switch(parentIndex) {
 		case 0:
 		    elements = document.getElementsByClassName("output-over-under");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
 		    break;
 		case 1:
 		    elements = document.getElementsByClassName("output-under-under");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
 		    break;
 		case 2:
 		    elements = document.getElementsByClassName("output-neutral-under");
-		    document.getElementById("resources-buttons").style.display = "inline";
+		    var button = document.getElementById("more-output-button");
+		    button.style.display = "inline";
+		    button.onclick = function() {
+			location.href="over-over.html";
+		    }
 		    break;
 		default:
-		
-		    elements = document.getElementsByClassName("output-unselected");
 		}
 	    } else {	
 		elements = document.getElementsByClassName("output-unselected");

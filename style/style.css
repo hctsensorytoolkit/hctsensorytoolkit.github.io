@@ -1,3 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arial:400,700);
+
+body {
+    background-color:#ECEEEB;
+    color: #5C5050;
+    font-family: "Montserrat", "Lato", "Arial", "sans-serif";
+    
+}
+
+.btn-primary {
+    background-color: #8D928B;
+    border-color: #8D928B;
+    color: #F2F2F2;
+}
+
+.btn-primary:hover {
+    background-color: #5C5050;
+}
+
 .input-parent,.input-child {
     padding: 1rem;
     border-style: solid;
