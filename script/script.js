@@ -15,7 +15,7 @@ function setup() {
 	    for(i = 0; i < inputsParent.length; i++) {
 		inputsParent[i].style.backgroundColor = "white";
 	    }
-	    this.style.backgroundColor = "pink";
+	    this.style.backgroundColor = "#DBDBDB";
 
 	    switch(this.id) {
 	      case "over-parent":
@@ -36,7 +36,7 @@ function setup() {
 	    for(i = 0; i < inputsChild.length; i++) {
 		inputsChild[i].style.backgroundColor = "white";
 	    }
-	    this.style.backgroundColor = "pink";
+	    this.style.backgroundColor = "#DBDBDB";
 
 	    switch(this.id) {
 	    case "over-child":

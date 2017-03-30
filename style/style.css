@@ -1,8 +1,44 @@
+.input-parent,.input-child {
+    padding: 1rem;
+    border-style: solid;
+    border-color:teal;
+}
+
+.input-row {
+    margin-top: 2rem;
+}
+
+.resources-section {
+    margin-top: 2rem;
+}
+
+.page-header h1 {
+    font-size: 5rem;
+}
 
 .output {
     display: none;
 }
 
 .output-unselected {
-    display: inline
+    display: inline;
 }
+
+#footer-link-list {
+    margin: auto;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    
+}
+
+#footer-link-list li {
+    display: inline;
+    list-style-type: none;
+}
+
+#footer-link-list li + li:before {
+    content: "     \2022     ";
+}
+
+
