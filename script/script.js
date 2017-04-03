@@ -9,17 +9,25 @@ function setup() {
 	var parentIndex;
 	var childIndex;
 
+	var parentDefaultColors = ["#D6E8EF", "#E8E2E7", "#D6E9D7"];
+	var parentSelectedColors = ["#A7D0E1", "#9FCAA0", "#D0C2CD"];
+	
+	var childDefaultColors = ["#FEC7BD", "#FCF378"]
+ 	var childSelectedColors = ["#FD9886", "#F4BF00"] 
+
 	var outputUpdater = {};
 	
 	outputUpdater.updateParent = function() {
+	    
 	    for(i = 0; i < inputsParent.length; i++) {
-		inputsParent[i].style.backgroundColor = "white";
+		inputsParent[i].style.backgroundColor = parentDefaultColors[i];
 	    }
-	    this.style.backgroundColor = "#DBDBDB";
 
+	    
 	    switch(this.id) {
 	      case "over-parent":
 		parentIndex = 0;
+		
 		break;
 	      case "under-parent":
 		parentIndex = 1;
@@ -28,15 +36,16 @@ function setup() {
 		parentIndex = 2;
 		break;
 	    }
-	    
+
+	    this.style.backgroundColor = parentSelectedColors[parentIndex];
 	    update();
 	};
 
 	outputUpdater.updateChild = function() {
+	    
 	    for(i = 0; i < inputsChild.length; i++) {
-		inputsChild[i].style.backgroundColor = "white";
+		inputsChild[i].style.backgroundColor = childDefaultColors[i];
 	    }
-	    this.style.backgroundColor = "#DBDBDB";
 
 	    switch(this.id) {
 	    case "over-child":
@@ -46,7 +55,8 @@ function setup() {
 		childIndex = 1;
 		break;
 	    }
-	    
+
+	    this.style.backgroundColor = childSelectedColors[childIndex];
 	    
 	    update();
 	};
@@ -140,6 +150,7 @@ function setup() {
     for(i = 0; i < inputsChild.length; i++) {
 	inputsChild[i].addEventListener("click", outputModule.updateChild);
     }
+
     
 }
 
