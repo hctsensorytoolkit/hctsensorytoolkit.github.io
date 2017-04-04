@@ -21,6 +21,7 @@ function setup() {
 	    
 	    for(i = 0; i < inputsParent.length; i++) {
 		inputsParent[i].style.backgroundColor = parentDefaultColors[i];
+		inputsParent[i].style.borderWidth = "0.2rem";
 	    }
 
 	    
@@ -38,6 +39,7 @@ function setup() {
 	    }
 
 	    this.style.backgroundColor = parentSelectedColors[parentIndex];
+	    this.style.borderWidth = "0.4rem";
 	    update();
 	};
 
@@ -45,6 +47,7 @@ function setup() {
 	    
 	    for(i = 0; i < inputsChild.length; i++) {
 		inputsChild[i].style.backgroundColor = childDefaultColors[i];
+		inputsChild[i].style.borderWidth = "0.2rem";
 	    }
 
 	    switch(this.id) {
@@ -57,13 +60,14 @@ function setup() {
 	    }
 
 	    this.style.backgroundColor = childSelectedColors[childIndex];
-	    
+	    this.style.borderWidth = "0.4rem";
 	    update();
 	};
 
 	function update() {
 	    var allOutputs = document.getElementsByClassName("output");
-	    
+
+	    document.getElementById("more-output-button").style.display = "none";
 	    for(i = 0; i < allOutputs.length; i++) {
 		allOutputs[i].style.display = "none";
 	    }
@@ -88,7 +92,7 @@ function setup() {
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
-			location.href="over-over.html";
+			location.href="under-over.html";
 		    }
 		    break;
 		case 2:
@@ -96,7 +100,7 @@ function setup() {
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
-			location.href="over-over.html";
+			location.href="neut-over.html";
 		    }
 		    break;
 		
@@ -108,7 +112,7 @@ function setup() {
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
-			location.href="over-over.html";
+			location.href="over-under.html";
 		    }
 		    break;
 		case 1:
@@ -116,7 +120,7 @@ function setup() {
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
-			location.href="over-over.html";
+			location.href="under-under.html";
 		    }
 		    break;
 		case 2:
@@ -124,13 +128,14 @@ function setup() {
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
-			location.href="over-over.html";
+			location.href="neut-under.html";
 		    }
 		    break;
 		default:
 		}
 	    } else {	
 		elements = document.getElementsByClassName("output-unselected");
+		
 	    }
 
 	    for(i = 0; i < elements.length; i++) {
