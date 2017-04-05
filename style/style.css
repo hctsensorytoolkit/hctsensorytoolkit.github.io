@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/css?family=Arial:400,700);
 
 body {
     color: #5C5050;
@@ -43,6 +42,25 @@ body {
 
 .btn-primary:hover {
     background-color: #5C5050;
+}
+
+.btn-secondary {
+    background-color: Transparent;
+    border: none;
+    color: #5C5050;
+    font-size:1.3em;
+}
+
+.btn-secondary:hover {
+    background-color: #5C5050;
+    color: #F2F2F2;
+}
+
+.btn-secondary:focus,.btn-secondary:active {
+    
+    border:none;
+    outline: none;
+    
 }
 
 .jumbotron {
@@ -112,6 +130,10 @@ body {
 
 #footer-link-list li + li:before {
     content: "     \2022     ";
+}
+
+.collapse-button {
+    margin-bottom:1rem;
 }
 
 

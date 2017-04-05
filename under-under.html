@@ -10,12 +10,31 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <script src="script/script.js"></script>
   </head>
 
 
   <body>
-
+    
+    <div id="popup-disclaimer-modal" class="modal modal-onload" data-show="true" data-backdrop="static" data-keyboard="false" role="dialog">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h4 class="modal-title">Disclaimer</h4>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	      The resources on this website are provided for informational purposes only, and should not be used to replace the specialized training and professional judgement of a licensed healthcare professional. This general information is not intended to diagnose any medical condition or to replace your healthcare professional. These resources are meant to be used in conjunction with the treatment of a licensed occupational therapist who is well versed in sensory integration theory and treatment.
+	    </p>
+	    
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">I understand</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
     <nav class="navbar navbar-default">
       <div class="container-fluid">
 	<div class="navbar-header">
@@ -41,7 +60,7 @@
     <div class="container">
       
       <div class="page-header">
-	<h1>Underreactive Guardian, Underreactive Child</h1>
+	<h1>Underreactive Caregiver, Underreactive Child</h1>
       </div>
     
       <div class="row">
@@ -54,7 +73,7 @@ If you identify with this description, please see the suggested activities and i
 
 
 	  <h3>In the Community</h3>
-<h4>Social Events</h4>
+	  <h4><img src="res/icons/social-events.png" alt="Social Events" height=42 width=42> Social Events</h4>
 <ul>
   <li>
     <a class="list-link" href="https://www.chewigemusa.com/">Use Chew Jewelry</a>
@@ -95,7 +114,7 @@ If you identify with this description, please see the suggested activities and i
 
 </ul>
 
-<h4>Running Errands</h4>
+<h4><img src="res/icons/errands.png" alt="Running Errands"> Running Errands</h4>
 <ul>
   <li>
     <a class="list-link" href="https://www.spdstar.org/basic/home-activities#h2">Add Sensory Input to Daily Activities</a>

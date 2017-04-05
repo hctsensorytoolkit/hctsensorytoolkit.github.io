@@ -16,7 +16,7 @@ function onLoad() {
 	var childDefaultColors = ["#FEC7BD", "#FCF378"]
  	var childSelectedColors = ["#FD9886", "#F4BF00"] 
 
-	var outputUpdater = {};
+	var outputUpdater = {};b
 	
 	outputUpdater.updateParent = function() {
 	    

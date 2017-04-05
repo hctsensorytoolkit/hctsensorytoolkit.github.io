@@ -12,11 +12,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="script/script.js"></script>
-    
   </head>
 
 
   <body>
+    <div id="popup-disclaimer-modal" class="modal modal-onload" data-show="true" data-backdrop="static" data-keyboard="false" role="dialog">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h4 class="modal-title">Disclaimer</h4>
+	  </div>
+	  <div class="modal-body">
+            <p>There are many ways to classify sensory preferences. We have created one example of categories that we hope are helpful to you and your child. To do so, we have pulled inspiration from many other existing tools. This is not the only way to categorize sensory preferences. This tool is simply meant to provide information about sensory preferences and how having different sensory styles can impact a relationship. This tool also provides activity suggestions to navigate those differences. <strong>None of the information presented is a formal diagnosis, and none of the information in this toolkit should be interpreted as medical advice. Do not use this information as a replacement for information from a licensed healthcare professional.</strong></p>
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">I understand</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
     <nav class="navbar navbar-default">
       <div class="container-fluid">
 	<div class="navbar-header">
@@ -42,7 +57,7 @@
       
       <div class="page-header">	
 	<h1>Toolkit</h1>
-	<p class="lead">insert some short toolkit instructions</p>
+	<p class="lead">Review the following sensory styles. First select the type that is the best fit for you, then select the type that is the best fit for your child. Feel free to experiment with multiple combinations.</p>
       </div>
 
       <div class="row input-row">
@@ -208,7 +223,6 @@
 	      <li>Intense patterns, bright colors, and lights are distracting to your child</li>
 	    </ul>
 	    
-
 	    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#over-child-modal">More...</button>
 	    <div class="modal fade" id="over-child-modal" tabindex="-1" role="dialog" aria-labelledby="Neutral Caregiver" aria-hidden="true">
 	      <div class="modal-dialog" role="document">
