@@ -28,11 +28,11 @@ body {
 }
 
 #banner-area h1 {
-    font-size: 800%;
+    font-size: 8vw;
 }
 
 #banner-area p {
-    font-size: 250%;
+    font-size: 2.5vw;
 }
 
 .btn-primary {
