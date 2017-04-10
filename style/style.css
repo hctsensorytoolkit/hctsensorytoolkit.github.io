@@ -14,24 +14,7 @@ body {
     margin-bottom:0px;
 }
 
-#index-banner-area {
-    background-image: url("../res/chalkbaby.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size:100%;
-    color:white;
-    text-shadow:0.1vw 0.1vw black;
-    padding-bottom: 10%;
-    text-align: right;
-}
 
-#index-banner-area h1 {
-    font-size: 8vw;
-}
-
-#index-banner-area p {
-    font-size: 2.5vw;
-}
 
 #banner-area {
     height:60vh;
@@ -40,16 +23,16 @@ body {
     background-size:100%;
     color:white;
     text-shadow:0.1vw 0.1vw black;
-    padding-bottom: 10%;
     text-align: right;
+    margin-bottom:1vh;
 }
 
 #banner-area h1 {
-    font-size: 8vw;
+    font-size: 800%;
 }
 
 #banner-area p {
-    font-size: 2.5vw;
+    font-size: 250%;
 }
 
 .btn-primary {
@@ -82,7 +65,7 @@ body {
 
 .jumbotron {
     background-color: white;
-    margin-top:2rem;
+    margin-top:2vh;
 }
 
 .input-parent,.input-child {
@@ -92,15 +75,7 @@ body {
     border-radius: 1rem;
     border-color:#5C5050;
     background-color:white;
-}
-
-
-.input-row,.direction-row {
-    margin-top: 2rem;
-}
-
-.resources-section {
-    margin-top: 2rem;
+    margin: 0.5rem;
 }
 
 
