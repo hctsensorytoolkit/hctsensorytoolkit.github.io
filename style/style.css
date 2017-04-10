@@ -116,7 +116,7 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 0.5em;
-    padding-bottom: 2em;
+    padding-bottom:1rem;
     
 }
 
@@ -138,8 +138,11 @@ body {
     padding:1rem;
 }
 
-#brand-img {
-    height:150%;
+#leaf-boat {
+    display: block;
+    margin: auto;
+    height:5rem;
+    margin-bottom:1rem;
 }
 
 .banner-left h1,.banner-left p {
