@@ -10,18 +10,17 @@ function onLoad() {
 	var parentIndex;
 	var childIndex;
 
-	var parentDefaultColors = ["#D6E8EF", "#E8E2E7", "#D6E9D7"];
 	var parentSelectedColors = ["#A7D0E1", "#9FCAA0", "#D0C2CD"];
 	
-	var childDefaultColors = ["#FEC7BD", "#FCF378"]
- 	var childSelectedColors = ["#FD9886", "#F4BF00"] 
+	
+ 	var childSelectedColors = ["#FEC7BD", "#FCF378"] 
 
 	var outputUpdater = {};
 	
 	outputUpdater.updateParent = function() {
 	    
 	    for(i = 0; i < inputsParent.length; i++) {
-		inputsParent[i].style.backgroundColor = parentDefaultColors[i];
+		inputsParent[i].style.backgroundColor = "white";
 		inputsParent[i].style.borderWidth = "0.2rem";
 	    }
 
@@ -40,14 +39,14 @@ function onLoad() {
 	    }
 
 	    this.style.backgroundColor = parentSelectedColors[parentIndex];
-	    this.style.borderWidth = "0.4rem";
+	    //this.style.borderWidth = "0.4rem";
 	    update();
 	};
 
 	outputUpdater.updateChild = function() {
 	    
 	    for(i = 0; i < inputsChild.length; i++) {
-		inputsChild[i].style.backgroundColor = childDefaultColors[i];
+		inputsChild[i].style.backgroundColor = "white";
 		inputsChild[i].style.borderWidth = "0.2rem";
 	    }
 
@@ -61,7 +60,7 @@ function onLoad() {
 	    }
 
 	    this.style.backgroundColor = childSelectedColors[childIndex];
-	    this.style.borderWidth = "0.4rem";
+	    //this.style.borderWidth = "0.4rem";
 	    update();
 	};
 
@@ -75,7 +74,7 @@ function onLoad() {
 
 	    document.getElementById("more-output-button").style.display = "none";
 	    
-	    var elements;
+	    var elements = document.getElementsByClassName("output-unselected");
 	    
 	    if(childIndex == 0) {
 		switch(parentIndex) {
@@ -134,9 +133,6 @@ function onLoad() {
 		    break;
 		default:
 		}
-	    } else {	
-		elements = document.getElementsByClassName("output-unselected");
-		
 	    }
 
 	    for(i = 0; i < elements.length; i++) {
