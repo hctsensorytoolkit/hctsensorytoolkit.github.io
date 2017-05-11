@@ -67,19 +67,19 @@ function onLoad() {
 	function update() {
 	    var allOutputs = document.getElementsByClassName("output");
 
-	    document.getElementById("more-output-button").style.display = "none";
+
 	    for(i = 0; i < allOutputs.length; i++) {
 		allOutputs[i].style.display = "none";
 	    }
 
 	    document.getElementById("more-output-button").style.display = "none";
 	    
-	    var elements = document.getElementsByClassName("output-unselected");
+	    document.getElementById("output-unselected").style.display = "inline";
 	    
 	    if(childIndex == 0) {
 		switch(parentIndex) {
 		case 0:
-		    elements = document.getElementsByClassName("output-over-over");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -88,7 +88,7 @@ function onLoad() {
 		    
 		    break;
 		case 1:
-		    elements = document.getElementsByClassName("output-under-over");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -96,7 +96,7 @@ function onLoad() {
 		    }
 		    break;
 		case 2:
-		    elements = document.getElementsByClassName("output-neutral-over");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -108,7 +108,7 @@ function onLoad() {
 	    } else if(childIndex == 1) {
 		switch(parentIndex) {
 		case 0:
-		    elements = document.getElementsByClassName("output-over-under");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -116,7 +116,7 @@ function onLoad() {
 		    }
 		    break;
 		case 1:
-		    elements = document.getElementsByClassName("output-under-under");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -124,7 +124,7 @@ function onLoad() {
 		    }
 		    break;
 		case 2:
-		    elements = document.getElementsByClassName("output-neutral-under");
+		    document.getElementById("output-unselected").style.display= "none";
 		    var button = document.getElementById("more-output-button");
 		    button.style.display = "inline";
 		    button.onclick = function() {
@@ -135,9 +135,7 @@ function onLoad() {
 		}
 	    }
 
-	    for(i = 0; i < elements.length; i++) {
-		elements[i].style.display = "inline";
-	    }
+	    
 	    
 	}
 
